@@ -1,0 +1,425 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image:url(../images/bg3.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+header p:last-child{
+    color:#d0df00;
+}
+
+#btn_up,
+#btn_down {
+    cursor: pointer;
+}
+
+#btn_up:hover,
+#btn_down:hover {
+    color:#ccdf06;
+}
+
+nav {
+    position: absolute;
+    right: 150px;
+    top: 20px;
+}
+
+h1,h2{
+    color:white;
+}
+
+#tiret,
+#menu {
+    display: inline-block;
+}
+
+#menu{
+    color:white;
+}
+
+#tiret {
+    position: relative;
+    top: 5px;
+    cursor: pointer;
+}
+
+#tiret .bar {
+    display: block;
+    width: 25px;
+    border: 2px solid #828385;
+    margin-bottom: 2px;
+    border-radius: 10px;
+}
+
+#espace_logo {
+    margin-left: 10px;
+}
+
+#espace_logo h1 {
+    margin-bottom: 0;
+    margin-top: 15px;
+    font-size: 40px;
+    padding: 0;
+    color:white;
+    font-weight: bold;
+}
+
+#espace_logo p {
+    margin-top: -7px;
+    margin-left: 3px;
+}
+
+#form {
+    position: absolute;
+    top: 35px;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+#form input[type="text"] {
+    width: 450px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    padding: 15px;
+    padding-left:30px;
+}
+
+#form input[type="submit"] {
+    width: 150px;
+    height: 30px;
+    display: inline-block;
+    border-radius: 0px 10px 10px 0px;
+    background-color: #d0df00;
+    border: none;
+    
+}
+
+.locate{
+    display: inline-block;
+    width:25px;
+    height:25px;
+    position: relative;
+    left:33px;
+    top:8px;
+    color:red;
+}
+
+
+#main,#footer {
+    margin-top: 90px;
+    margin-left: 45px;
+}
+
+#footer{
+    position: relative;
+}
+
+#main #para{
+    margin-top: 2px;
+    color:#98999b;
+    margin-left:10px;
+    margin-bottom: 35px;
+}
+
+#btn_join{
+    width:170px;
+    height: 55px;
+    border-radius: 35px;
+    border:none;
+    background-color: #ccdf06;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+
+#btn_join2 {
+    width: 100px;
+    height: 35px;
+    border-radius: 35px;
+    border: none;
+    background-color: #ccdf06;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+
+#btn_join a{
+    text-decoration: none;
+    color:black;
+    font-size:25px;
+}
+
+#btn_join2 a{
+    color:black;
+    text-decoration:none;
+    font-size:16px;
+    font-weight: bold;
+}
+
+#bar,#bar_info,#info{
+    display: inline-block;
+}
+
+#bar{
+    position: absolute;
+    height: 250px;
+    border-radius: 18px;
+    top:20px;
+}
+
+#bar .bar_v{
+    display: block;
+    height: 60px;
+    border:2px solid grey;
+}
+
+#bar .bar_v.active{
+    border-color:#ccdf06;
+}
+
+#bar .bar_v.first{
+    border-radius:10px 10px 0px 0px;
+}
+
+#bar .bar_v.last{
+    border-radius:0px 0px 10px 10px;
+}
+
+#bar_info{
+    font-size:16px;
+    width:100px;
+    margin-right:120px;
+    margin-left:25px;
+}
+
+#bar_info h2:first-child:after{
+    content:"";
+    display: block;
+    width: 90px;
+    border: 1px solid;
+}
+
+#bar_info h2#mem:after {
+    content: "";
+    display: block;
+    width: 50px;
+    border: 1px solid;
+}
+
+#bar_info h2#wha:after {
+    content: "";
+    display: block;
+    width: 90px;
+    border: 1px solid;
+}
+
+#bar_info h2:first-child{
+    color:#ccdf06;
+}
+
+#bar_info p,#info p,#btn_change{
+    color:#98999b;
+}
+
+#info{
+    width:500px;
+}
+
+#info h1{
+    font-size:45px;
+    margin-bottom: 5px;
+}
+
+#info p{
+    font-size:18px;
+    line-height: 28px;
+}
+
+
+
+
+
+
+@media (min-width:793px) {
+    nav {
+        position: absolute;
+        right: 25px;
+        top: 20px;
+    }
+
+    #form {
+        width: 50%;
+        margin-left: 10%;
+    }
+
+    #form input[type="text"] {
+        width: 80%;
+        outline: none;
+    }
+
+    #form input[type="submit"] {
+        width: 30%;
+        margin-left: -30%;
+        font-weight: bold;
+        font-size:16px;
+        position: relative;
+        top:1px;
+    }
+
+    #main h1 {
+        margin-bottom: 0;
+        line-height: 75px;
+        font-size:65px;
+    }
+
+    #div_btn {
+        position: relative;
+    }
+
+
+    #btn_change {
+        font-size: 20px;
+        transform: rotate(-90deg);
+        position: absolute;
+        width: 100px;
+        height: 25px;
+        padding: 0;
+        margin-left: -55px;
+        margin-bottom: 25px;
+        margin-top: 20px;
+
+    }
+
+     #bar_info h2#wha {
+         font-size:20px;
+     }
+
+    
+
+}
+
+@media(max-width:792px) {
+
+    nav {
+        position: absolute;
+        right: 10px;
+        top: 20px;
+    }
+
+    #form {
+        position: relative;
+        padding-left: 5%;
+        margin-bottom: 50px;
+    }
+
+    #form input[type="text"] {
+        width: 90%;
+        height: 30px;
+    }
+
+    #form input[type="submit"] {
+        width: 20%;
+        height: 30px;
+        display: inline-block;
+        margin-left: -20%;
+        outline: none;
+    }
+
+    #main div:first-child {
+        text-align: center;
+        font-size: 50px;
+        padding: 5px;
+    }
+
+    #main div:first-child h1 {
+        margin-bottom: 2px; 
+    }
+
+    #para {
+        font-size: 20px;
+        margin-top: 2px;
+        margin-bottom: 15px;
+    }
+
+    #div_btn #btn_change {
+        width: 100px;
+        transform: none;
+        margin: 0 auto;
+        font-size: 20px;
+    }
+
+    #bar_info {
+        width: 80%;
+        margin: 0px auto;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    #info {
+        text-align: justify;
+        width: 90%;
+        margin: 0 auto;
+        font-size: 25px;
+    }
+
+    #info h1 {
+        text-align: center;
+    }
+
+    #btn_join {
+        width: 200px;
+        height: 55px;
+        border-radius: 45px;
+    }
+
+    #bar_info h2:after {
+        content: "";
+        display: block;
+        margin:0 auto;
+    }
+
+    #bar_info h2#mem:after,
+    #bar_info h2#wha:after,
+    #bar_info h2:first-child:after {
+        width: 150px; 
+        border: 2px solid;
+    }
+
+    #bar,
+    #bar_info,
+    #info {
+        display: block;
+    }
+
+    #footer{
+        margin-top:15px;
+    }
+
+    #main,
+    #footer {
+        margin-left: 5px;
+    }
+
+    #bar {
+        width: 250px;
+        border-radius: 18px;
+        height: 15px;
+        margin:0 auto;
+        position: relative;
+        top:0px;
+    }
+
+    #bar .bar_v {
+        display: inline-block;
+        width: 50px;
+        height: 2px;
+        border: 2px solid grey;
+    }
+
+}
